@@ -12,7 +12,7 @@
 # For details, see https://github.com/LLNL/Umpire
 # Please also see the LICENSE file for MIT license.
 ##############################################################################
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.8)
 
 cmake_policy(SET CMP0048 NEW)
 cmake_policy(SET CMP0057 NEW)
@@ -61,7 +61,6 @@ install(FILES
 
 install(EXPORT umpire-targets DESTINATION share/umpire/cmake)
 
-message(INFO "UMPIRE BINARY DIR: ${PROJECT_BINARY_DIR}")
 include_directories(${PROJECT_BINARY_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 
